@@ -129,9 +129,6 @@ Restaurant-Recommender-main/
 - **JavaScript** - Interactivity
 - **Choices.js** - Enhanced dropdown search
 
-### Infrastructure
-- **Gunicorn** - Production server (configured)
-- **Heroku** - Deployment ready
 
 ---
 
@@ -171,12 +168,7 @@ Restaurant-Recommender-main/
 6. Calculate match percentages (score × 100)
 7. Format and display results
 
-### Similarity Calculation:
-```
-Features combined: cuisines + restaurant_type + city
-Method: TF-IDF vectorization → Cosine Similarity
-Result: 4000×4000 matrix of similarity scores
-```
+
 
 ---
 
@@ -192,12 +184,6 @@ Result: 4000×4000 matrix of similarity scores
 - **restaurant1.csv** - 4000 restaurants, 12 features
 - **restaurant.pkl** - Serialized ML model (122.3 MB)
 
-### Documentation
-- **README.md** - Overview (this file)
-- **QUICK_START.md** - Getting started guide
-- **PROJECT_SUMMARY.md** - Detailed architecture
-- **FILE_STRUCTURE.md** - File listing and details
-- **DATA_OVERVIEW.md** - Statistics and analysis
 
 ### Config Files
 - **requirements.txt** - Python dependencies
@@ -290,16 +276,7 @@ python app1.py
 ```
 Then visit: http://127.0.0.1:5000
 
-### For Production (Heroku)
-```bash
-heroku create your-app-name
-git push heroku main
-```
 
-### For Custom Server
-```bash
-gunicorn -w 4 -b 0.0.0.0:5000 app1:app
-```
 
 ---
 
@@ -343,21 +320,6 @@ The script will:
 - Verify style.css loads (check network tab)
 - Try different browser
 
----
-
-## 📚 Additional Resources
-
-**For More Information:**
-- Read **QUICK_START.md** for guided walkthrough
-- Check **PROJECT_SUMMARY.md** for detailed architecture
-- See **FILE_STRUCTURE.md** for code organization
-- Review **DATA_OVERVIEW.md** for statistics
-
-**Common Tasks:**
-- Starting the app: See QUICK_START.md
-- Understanding the code: See FILE_STRUCTURE.md
-- Retraining the model: See PROJECT_SUMMARY.md
-- Dataset details: See DATA_OVERVIEW.md
 
 ---
 
@@ -395,11 +357,6 @@ This project demonstrates:
 2. Select any restaurant
 3. View recommendations
 
-### Explore the Code
-- Review app1.py (Flask logic)
-- Check build_model.py (ML pipeline)
-- Examine index.html (UI structure)
-- Study style.css (modern styling)
 
 ### Extend the Project
 - Add user ratings and reviews
@@ -408,20 +365,6 @@ This project demonstrates:
 - Create an API endpoint
 - Build a mobile app
 
-### Deploy It
-- Push to Heroku
-- Deploy to AWS/GCP/Azure
-- Set up continuous deployment
-- Monitor performance
-
----
-
-## 📄 License & Credits
-
-This project is a restaurant recommendation demonstration using:
-- Zomato restaurant data (for learning purposes)
-- Open-source Python libraries
-- Modern web technologies
 
 ---
 
@@ -438,8 +381,4 @@ The **Restaurant Recommender** is a complete, production-ready web application t
 
 **Get started**: Visit **http://127.0.0.1:5000** now!
 
----
 
-**Last Updated**: April 16, 2026  
-**Version**: 1.0 Complete  
-**Status**: ✅ Production Ready
